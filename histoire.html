@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+	  <meta charset="utf-8"/>
+	  <title>Neutrinos</title>
+	  <link rel="stylesheet" href="style.css"/>
+	  <link rel="stylesheet" href="styletimeline.css"/>
+	  <script src="decouvertesxml.js"></script>
+	  <script src="decouvertesxsl.js"></script>
+	  <script src="xslttransform.js"></script>
+	  <script>
+		function loadXslt(){
+			<!-- insertXsl(decouvertesxml,decouvertesxslliste,'divlistedecouvertes'); -->
+			<!-- insertXsl(decouvertesxml,decouvertesxslillustrations,'divtableaudecouvertes'); -->
+			insertXsl(decouvertesxml,decouvertesxsltimeline,'divtimelinedecouvertes');
+		}
+	  </script>
+	</head>
+	<body class="histoire" onload="loadXslt()">
+		<script type="text/javascript" src="header.js"></script>
+		<section>
+			<div class="conteneur">
+				<h1 class="titre-page">Les découvertes</h1>
+                <div class="milieu-gauche">
+					<div id="divtimelinedecouvertes"></div>
+                </div>
+				<div class="milieu-droite">
+                    <p>En 1934, Fermi incorpora le neutrino dans sa théorie révolutionnaire de la désintégration bêta (désintégration radioactive). Le succès de cette théorie établissait l'existence du neutrino aux yeux des physiciens du nucléaire et des particules, mais la particule elle-même restait insaisissable. Par conséquent, Pauli craignait d'avoir postulé une particule qui ne pourrait jamais être détectée (cela pose problème car en science les théories devraient toujours être testables). Heureusement, l'avènement de la fission nucléaire dans les années 1930 et 1940 offra une source intense sans précédent de (anti-) neutrinos, qui pour la première fois a fait de la détection expérimentale de ces particules insaisissables une chose réaliste.</p>
+					<p>En effet, le nombre énorme de neutrinos produits par la fission augmente considérablement les chances de détecter certains neutrino. Comme pour la loterie, même si la probabilité qu'un neutrino donné soit détecté (tout billet donné peut gagner le gros lot) est très faible, si suffisamment de neutrinos sont produits (si on achète suffisement de billet), il est probable que certains seront détectés (au moins un gagnera probablement le jackpot).</p>
+					<br>
+					<p>Dans les années 1940, le physicien Fred Reines travaillait à Los Alamos, impliqué dans les essais d'armes nucléaires. En 1951, il se tourna vers la physique fondamentale. En collaboration avec l'expérimentateur Clyde Cowan, il se mit à travailler sur la conception d'un grand détecteur (un mètre cube, c'est gros pour l'époque) qui devait résister à une explosion nucléaire pour pouvoir prendre des données.</p>
+					<p>Heureusement, ils réussirent à se passer d'une telle explosion en réduisant le bruit de fond expérimental. Cela leur permit d'utiliser le flux de neutrinos moins intense d'un réacteur nucléaire.</p>					
+					<p>Finalement, le premier neutrino est détecté en 1956.</p>
+					<br>
+					<p>Ce premier neutrino détecté était un neutrino électronique (ou de type électron ou encore de saveur électronique), c'est à dire qu'il est issu d'une intéraction qui impliquait un électron. En 1962 et 2000 sont détectés les neutrinos muonique et tauique qui sont issus d'une intéraction impliquant un muon et une particule tau respectivement. Ces particules étant beaucoup plus lourdes que l'électron, il fallait des faisceaux beaucoup plus énergétique que celui de 1956, ce qui explique leur découverte plus tardive (voir très tradive pour le tau car il faut une énergie considérable pour le produire).</p>
+					<br>
+					<p>Ensuite, en 1989, dès les premiers mois de prise de données au LEP, le nouvel accélérateur de particules du CERN, l'étude de la durée de vie d'une particule nommée Z a permis de montrer qu'il n'existait que trois familles de neutrinos (électronique, muonique et tauique).</p>
+					<br>
+					<p>Enfin, en 1998, le phénomène très intéressant d'oscillation est observé via le détecteur Kamiokande au Japon.</p>
+					<img src="images/imageT2K.jpg" alt="image d'une intéraction dans le détecteur Kamiokande"/>
+                </div>
+                <div class="clear"></div>
+			</div>
+		</section>
+		<script type="text/javascript" src="footer.js"></script>
+	</body>
+</html>
